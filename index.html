@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IWIS Visualizacion</title>
+  <script type="text/javascript" src="js/enviodato.js"></script>
+  <script src="js/mqttws31.js"></script>
+  <link rel="stylesheet" href="css/Estilos.css">
+  <link rel="shortcut icon" type="image/png" href="Img/favicon.png"/>
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/kelly.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+</head>
+
+<body>
+
+  <div class="row">
+    <div class="column side" style="background-color:#aaa;">
+      <img src="Img/logo.jpeg" alt="logo" style="width:270px;height:270px;">
+    </div>
+    <div class="column middle" style="background-color:#bbb;">
+      <div id="fondo" class="header">
+        <h1>BIENVENIDO</h1>
+        <p>Monitoreo y Control De Tempertura</p>
+      </div>
+    </div>
+    <div class="column side" style="background-color:#aaa;">
+      <img src="Img/logo.jpeg" alt="logo" style="width:270px;height:270px;" >
+    </div>
+  </div>
+<div class="header4">
+  <h1> </h1>
+</div>
+  <div class="header3">
+    <h1>INDICADOR DE TEMPERATURA EN TIEMPO REAL</h1>
+  </div>
+
+  <div id="chartdiv"></div>
+
+  <div class="header3">
+    <h1>TEMPERATURA IDEAL</h1>
+  </div>
+  <div class="header5">
+    <input class="set" type="text" name="SetPoint" id="SetPoint" placeholder="Ingrese El Valor De la Temperatura Ideal">
+    <button class="boton" type="button" onclick="getData()">Enviar</button>
+  </div>
+
+  <div class="header2">
+    <h1>INDUSTRIAL WEB INTERFACE SOLUTION</h1>
+    <p>Imnovacion y Evolucion De Nuevas TEcnologias En Industria 4.0</p>
+    <p>juand.marroquing@utadeo.edu.co diegoal.sanchezl@utadeo.edu.co nelsonm.guerrerom@utadeo.edu.co juand.caserese@utadeo.edu.co wilsonh.nocobev@utadeo.edu.co</p>
+  </div>
+
+  <script src="js/IoT-mqtt.js"></script>
+  <Script src="js/Grafico.js"></Script>
+</body>
+
+</html>
